@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Genos:wght@100&family=Rubik+Iso&family=Ubuntu:wght@300&display=swap");
+html, body {
+  overflow: hidden;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  z-index: 1;
+}
+
+body {
+  width: 100%;
+  background-color: rgb(1, 1, 53);
+  color: rgb(235, 230, 255);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.25rem;
+  padding: 2%;
+}
+
+h1 {
+  font-size: 6rem;
+  font-family: "Rubik Iso", sans-serif;
+}
+
+h1 + p {
+  font-size: 2rem;
+  font-family: "Genos", cursive;
+}
+
+.options {
+  position: absolute;
+  padding: 1rem;
+  top: 0;
+  left: 0;
+}
+
+#options .container {
+  position: relative;
+  height: 95svh;
+  width: 95vw;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(48deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 47%, rgb(0, 212, 255) 93%);
+  border-radius: 0 100px 100px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-button {
+  height: min(20vh, 5rem);
+  width: min(80vw, 20rem);
+  margin-bottom: 1rem;
+  position: absolute;
+  bottom: 0;
+}
+
+#bus1 {
+  position: relative;
+  z-index: 0;
+  transform-origin: 160%;
+  -webkit-animation-name: rotation;
+          animation-name: rotation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+#bus2 {
+  position: relative;
+  z-index: 0;
+  transform-origin: -500%;
+  -webkit-animation-name: rotation2;
+          animation-name: rotation2;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotation2 {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rotation2 {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+/*# sourceMappingURL=styles.css.map *//*# sourceMappingURL=styles.css.map */
